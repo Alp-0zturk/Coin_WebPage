@@ -1,0 +1,217 @@
+:root {
+    --primary-color: rgb(0, 209, 220);
+    --secondary-color: rgb(0, 195, 206);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    background-color: black;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.back {
+    width: 100%;
+    height: auto;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-content {
+    position: relative;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 15px;
+}
+
+h1, .head {
+    font-size: clamp(24px, 5vw, 48px);
+    color: var(--secondary-color);
+    text-shadow: 0 0 20px rgb(211, 211, 211);
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 36px);
+    color: var(--secondary-color);
+}
+
+h3, p, a {
+    font-size: clamp(16px, 2vw, 20px);
+    text-align: center;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.Tweet_post_button_container {
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: rgb(248, 247, 255);
+    color: black;
+    margin: 20px auto;
+    margin-left: 500px;
+    white-space: wrap;
+}
+
+.face {
+    max-width: 70%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.container, .container2, .container3, .container4, .outcont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+
+.e1, .logos, .box {
+    flex: wrap;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.logos img {
+    max-width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: -10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(211, 211, 211);
+    background-color: rgb(0, 0, 0);
+    white-space: nowrap;
+}
+
+.container2, .container3{
+    margin: 10px auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(66, 66, 66);
+    text-align: center;
+    flex: wrap;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100%, auto;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 0 20px rgb(66, 66, 66);
+}
+.container4 h3 {
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.c2bg-color, .boxbg {
+    background-color: rgb(34, 34, 34);
+}
+
+.gray-background {
+    background-color: rgb(60, 60, 60);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.box, .box2 {
+    flex: 1 1 300px;
+    margin: 12px;
+    padding: 30px;
+    color: rgb(198, 198, 198);
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.7s ease;
+}
+
+.box:hover, .box2:hover {
+    height: auto;
+    opacity: 1;
+}
+
+.SOL {
+    margin: 20px 10px 100px;
+    text-align: center;
+}
+
+.love-main{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.love-logo img {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.loved-by-text {
+    font-size: clamp(24px, 5vw, 48px);
+    color: var(--secondary-color);
+    text-shadow: 0 0 50px rgb(211, 211, 211);
+    margin: 100px 30%;
+    text-align: center;
+}
+
+.credit {
+    font-size: 10px;
+    color: rgb(72, 72, 72);
+    background-color: rgb(8, 8, 8);
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+       .container, .container2, .container3, .container4, .outcont {
+        flex-direction: column;
+    }
+
+    .Tweet_post_button_container {
+        transform: none;
+        width: auto;
+    }
+
+    .love-main, .love-main2 {
+        text-align: center;
+    }
+}
